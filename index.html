@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadBooks</title>
+    <script src="https://kit.fontawesome.com/8f682ba053.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            read<span class="bold-text">books</span>
+        </h1>
+        <div class="browsing">
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">
+                        Browse
+                    </span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="browse__menu">
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">Fantasy                       </a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Mystery</a></li>
+                   </ul>
+            </div>
+            <form action="#" class="search">
+                
+                <input type="text" class="search__input" placeholder="Search Book">
+                <div class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass" href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </div>
+            </form>
+        </div>
+        
+        <div class="user__nav">
+            <div class="profile__image">
+                <img src="img/user-6.jpg" alt="" class="user__img">
+                <span class="user__active"></span>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </div>
+        </div>
+    </header>
+<!-- 
+    carousal -->
+    
+    <main id="main">
+      
+        <aside>
+           <div class="author__week">
+                <h2 class="aside__title">
+                    Author of the week
+                </h2>
+                <div class="authors">
+                    <div class="author">
+                        <img src="img/women.jpg" class="author__image" alt="">
+                        <h4 class="author__name">Josephine Pierce</h4>
+                    </div>
+                    <div class="author">
+                        <img src="img/user10.jpg" class="author__image" alt="">
+                        <h4 class="author__name">Jonathan Doe</h4>
+                    </div>
+                    <div class="author">
+                        <img src="img/user7.jpg" class="author__image" alt="">
+                        <h4 class="author__name">Lucy Parker</h4>
+                    </div>
+                    <div class="author">
+                        <img src="img/user8.jpg" class="author__image" alt="">
+                        <h4 class="author__name">Noah Jones</h4>
+                    </div>
+                    <div class="author">
+                        <img src="img/user9.jpg" class="author__image" alt="">
+                        <h4 class="author__name">Anheline Summer</h4>
+                    </div>
+                   
+
+                </div>
+           </div>
+           <div class="books__year">
+            <h2 class="aside__title">
+                Books of the year
+            </h2>
+            <div class="books__year__list">
+                <div class="year__book">
+                    <img src="book_images/cell phone swap.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>The Cell Phone Swap</h4>
+                        <p>by Lindsey Summers</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Mr. Popular and I.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Mr. Popular and I</h4>
+                        <p>by thefreakoffreaks</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Mr. Popular and I.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Mr. Popular and I</h4>
+                        <p>by thefreakoffreaks</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Mr. Popular and I.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Mr. Popular and I</h4>
+                        <p>by thefreakoffreaks</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Mr. Popular and I.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Mr. Popular and I</h4>
+                        <p>by thefreakoffreaks</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Mr. Popular and I.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Mr. Popular and I</h4>
+                        <p>by thefreakoffreaks</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/The Bad Boy and the Tomboy.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>The Bad Boy and the Tomboy</h4>
+                        <p>by Nicole Nwosu</p>
+                    </div>
+                </div>
+                <div class="year__book">
+                    <img src="book_images/Everything Happens at 2 04 AM.jpg" class="year__book__img" alt="">
+                    <div class="year__book__name">
+                        <h4>Everything Happens at 2:04 AM</h4>
+                        <p>by Nikki20038</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </aside>
+        <div class="books">
+            
+           
+                <div class="books__category-title">
+                <h2>Popular by Genre</h2>
+                <ul class="book__categories">
+                    <li class="book__categories__item"><a href="#" class="book__categories__link active">All Genres</a></li>
+                    <li class="book__categories__item"><a href="#" class="book__categories__link">Business</a></li>
+                    <li class="book__categories__item"><a href="#" class="book__categories__link">Science</a></li>
+                    <li class="book__categories__item"><a href="#" class="book__categories__link">Fiction</a></li>
+                    <li class="book__categories__item"><a href="#" class="book__categories__link">Philosophy</a></li>
+                    <li class="book__categories__item"><a href="#" class="book__categories__link">Biography</a></li>
+                </ul>
+                </div>
+                <div class="book__card-container">
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/act like it.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">Act Like It</h3>
+                            <p class="book__author">by Lucy Parker</p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-1" >
+                                    <label for="star-1"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-2" >
+                                    <label for="star-2"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-3">
+                                    <label for="star-3"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-4">
+                                    <label for="star-4"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-5">
+                                  <label for="star-5"><i class="fa-solid fa-star"></i></label>
+                               
+                                  
+                                   
+    
+                                 
+                                </div>
+                                
+                                <div class="book__votes">
+                                    <span>1,92,222,222 voters</span>
+                                </div>
+                            </div>
+                            
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                            <p>John Doe and 2 other friends like this</p>
+                        </div> -->
+                    </div>
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/1.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">It Ends With Us</h3>
+                            <p class="book__author">by Colleen Hoover</p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-21" >
+                                    <label for="star-21"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-22" >
+                                    <label for="star-22"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-23">
+                                    <label for="star-23"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-24">
+                                    <label for="star-24"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-25">
+                                  <label for="star-25"><i class="fa-solid fa-star"></i></label>
+                               
+                                  
+                                   
+    
+                                 
+                                </div>
+                                
+                                <div class="book__votes">
+                                    <span>3,92,222,222 voters</span>
+                                </div>
+                            </div>
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                           <p>John Doe and 2 other friends like this</p> 
+                        </div> -->
+                    </div>
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/The Quarry Girls A Thriller.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">The Quarry Girls: A Thriller</h3>
+                            <p class="book__author">by Jess Lourey
+                            </p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-31" >
+                                    <label for="star-31"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-32" >
+                                    <label for="star-32"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-33">
+                                    <label for="star-33"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-34">
+                                    <label for="star-34"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-35">
+                                  <label for="star-35"><i class="fa-solid fa-star"></i></label>
+                               
+                                  
+                                   
+    
+                                 
+                                </div>
+                                
+                                <div class="book__votes">
+                                    <span>2,92,222,222 voters</span>
+                                </div>
+                            </div>
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                            <p>John Doe and 2 other friends like this</p>
+                        </div> -->
+                    </div>
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/the widow.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">The Widow</h3>
+                            <p class="book__author">by Kaira Rouda</p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-41" >
+                                    <label for="star-41"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-42" >
+                                    <label for="star-42"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-43">
+                                    <label for="star-43"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-44">
+                                    <label for="star-44"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-45">
+                                  <label for="star-45"><i class="fa-solid fa-star"></i></label>
+                               
+                                  
+                                   
+    
+                                 
+                                </div>
+                                
+                                <div class="book__votes">
+                                    <span>1,92,222,222 voters</span>
+                                </div>
+                            </div>
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                             <p>John Doe and 2 other friends like this</p> 
+                        </div> -->
+                    </div>
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/Regretting You.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">Regretting You</h3>
+                            <p class="book__author">by Colleen Hoover</p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-51" >
+                                    <label for="star-51"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-52" >
+                                    <label for="star-52"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-53">
+                                    <label for="star-53"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-54">
+                                    <label for="star-54"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-55">
+                                  <label for="star-55"><i class="fa-solid fa-star"></i></label>
+                               
+                                  
+                                   
+    
+                                 
+                                </div>
+                                
+                                <div class="book__votes">
+                                    <span>3,53,222,222 voters</span>
+                                </div>
+                            </div>
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                             <p>John Doe and 2 other friends like this</p> 
+                        </div> -->
+                    </div>
+                    <div class="book__card">
+                        <div class="book__section">
+                        <div class="book__image">
+                            <img src="book_images/No Plan B A Jack Reacher.jpg" alt="book image">
+                        </div>
+                        <div class="book__content">
+                            <div class="read_more">
+                                
+                            </div>
+                            <h3 class="book__title">No Plan B: A Jack Reacher</h3>
+                            <p class="book__author">by Andrew Child and Lee Child</p>
+                            <div class="book__ratings">
+                               
+                                <div class="overview__stars">
+                                    <input type="radio" name="rating"   id="star-61" >
+                                    <label for="star-61"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-62" >
+                                    <label for="star-62"><i class="fa-solid fa-star "></i></label>
+                                    <input type="radio" name="rating"  id="star-63">
+                                    <label for="star-63"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-64">
+                                    <label for="star-64"><i class="fa-solid fa-star"></i></label>
+                                    <input type="radio" name="rating"  id="star-65">
+                                  <label for="star-65"><i class="fa-solid fa-star"></i></label>
+                               
+                                </div>
+                                <div class="book__votes">
+                                    <span>2,22,333,322 voters</span>
+                                </div>
+                            </div>
+                            <p class="book__description">
+                                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.adipisicing elit. Laboriosam rerum dolorem iure 
+                            </p>
+                        </div>
+                    </div>
+                        <!-- <div class="book__likeUser">
+                            <div class="user__icon">
+                                <img src="img/user-1.jpg" alt="">
+                                <img src="img/user-2.jpg" alt="">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                           <p>John Doe and 2 other friends like this</p> 
+                        </div> -->
+                    </div>
+                </div>
+        </div>
+    </main>
+    <script>
+        
+    const dropdown=document.querySelectorAll('.dropdown')
+    dropdown.forEach(dropdown =>{
+        const select= dropdown.querySelector('.select')
+        const caret=dropdown.querySelector('.caret')
+        const menu = dropdown.querySelector('.browse__menu')
+        const options = dropdown.querySelectorAll('.browse__menu li')
+        const selected = dropdown.querySelector('.selected')
+        select.addEventListener('click',()=>{
+            select.classList.toggle('select-clicked')
+            caret.classList.toggle('caret-rotate')
+            menu.classList.toggle('open-menu')
+        })
+        options.forEach(option=>{
+            option.addEventListener('click',()=>{
+                selected.innerText = option.innerText
+                select.classList.remove('select-clicked')
+                caret.classList.remove('caret-rotate')
+                menu.classList.remove('open-menu')
+                options.forEach(option=>{
+                    option.classList.remove('browse_active')
+                })
+                option.classList.add('browse_active')
+            })
+        })
+    })
+    </script>
+
+</body>
+</html>
