@@ -13,7 +13,16 @@
         <h1 class="header__title">
             read<span class="bold-text">books</span>
         </h1>
-        <div class="browsing">
+        <form action="#" class="search">
+                
+            <input type="text" class="search__input" placeholder="Search Book">
+            <div class="search__button">
+                <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass" href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </div>
+        </form>
+        
             <div class="dropdown">
                 <div class="select">
                     <span class="selected">
@@ -33,17 +42,9 @@
                     <li><a href="#">Mystery</a></li>
                    </ul>
             </div>
-            <form action="#" class="search">
-                
-                <input type="text" class="search__input" placeholder="Search Book">
-                <div class="search__button">
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-magnifying-glass" href="img/sprite.svg#icon-magnifying-glass"></use>
-                    </svg>
-                </div>
-            </form>
-        </div>
+           
         
+       
         <div class="user__nav">
             <div class="profile__image">
                 <img src="img/user-6.jpg" alt="" class="user__img">
@@ -51,7 +52,7 @@
             </div>
             <div class="menu">
                 <i class="fa-solid fa-bars"></i>
-                <span>Menu</span>
+               
             </div>
         </div>
     </header>
@@ -210,14 +211,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                            <p>John Doe and 2 other friends like this</p>
-                        </div> -->
+                   
                     </div>
                     <div class="book__card">
                         <div class="book__section">
@@ -259,14 +253,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                           <p>John Doe and 2 other friends like this</p> 
-                        </div> -->
+                       
                     </div>
                     <div class="book__card">
                         <div class="book__section">
@@ -309,14 +296,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                            <p>John Doe and 2 other friends like this</p>
-                        </div> -->
+                       
                     </div>
                     <div class="book__card">
                         <div class="book__section">
@@ -358,14 +338,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                             <p>John Doe and 2 other friends like this</p> 
-                        </div> -->
+                      
                     </div>
                     <div class="book__card">
                         <div class="book__section">
@@ -407,14 +380,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                             <p>John Doe and 2 other friends like this</p> 
-                        </div> -->
+                  
                     </div>
                     <div class="book__card">
                         <div class="book__section">
@@ -451,14 +417,7 @@
                             </p>
                         </div>
                     </div>
-                        <!-- <div class="book__likeUser">
-                            <div class="user__icon">
-                                <img src="img/user-1.jpg" alt="">
-                                <img src="img/user-2.jpg" alt="">
-                                <img src="img/user-3.jpg" alt="">
-                            </div>
-                           <p>John Doe and 2 other friends like this</p> 
-                        </div> -->
+                       
                     </div>
                 </div>
         </div>
@@ -484,9 +443,9 @@
                 caret.classList.remove('caret-rotate')
                 menu.classList.remove('open-menu')
                 options.forEach(option=>{
-                    option.classList.remove('browse_active')
+                    option.classList.remove('active')
                 })
-                option.classList.add('browse_active')
+                option.classList.add('active')
             })
         })
     })
