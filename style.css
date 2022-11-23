@@ -659,7 +659,7 @@ aside {
     color: var(--color-grey-dark-3);
 }
 #footer
-{padding:3rem;
+{padding:2rem 2rem 0;
     background-color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -667,15 +667,20 @@ aside {
 }
 #footer p{
     font-size: 1.65rem;
-    padding-left:5.5rem;
+  padding-left: 5.5rem;
     color:var(--color-grey-light-2)
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #footer ul{
     list-style-type: none;
     padding:2rem;
     display: flex;
 }
-#footer ul li {
+#footer .footer__nav  li {
     padding:1.5rem;
 }
 #footer ul li a{
@@ -687,8 +692,11 @@ aside {
 #footer ul li a:not(:last-child){
     margin-right: 1rem;
 }
-#footer ul li a:hover{
+#footer .footer__nav a:hover{
     background-color: var(--color-primary-dark);
+}
+.social-links li a .fa-brands{
+    font-size: 2rem;
 }
 .year__book__name p:hover {
     cursor: pointer;
@@ -762,6 +770,15 @@ aside {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    .social-links{
+        margin-left: 2rem;
+
+    }
 }
 
 @media (max-width:650px) {
@@ -821,5 +838,8 @@ aside {
     }
  #footer ul {
     flex-direction: column;
+ }
+ .footer-links{
+    flex-direction: row;
  }
 }
